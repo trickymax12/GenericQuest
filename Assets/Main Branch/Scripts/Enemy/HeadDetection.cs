@@ -9,7 +9,7 @@ public class HeadDetection : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            EnemyDeath ed = transform.parent.GetComponent<EnemyDeath>();
+            joelEnemyDeath ed = transform.parent.GetComponent<joelEnemyDeath>();
 
             ed.isHitOnHead = true;
             ed.player = collision.gameObject;
